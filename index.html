@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <SCRIPT LANGUAGE="JAVASCRIPT">
+        
+        function lifetimer(){            
+        
+                today = new Date()          
+        
+                BirthDay = new Date(document.live.age.value)         
+        
+                timeold = (today.getTime() - BirthDay.getTime());         
+        
+                sectimeold = timeold / 1000;         
+        
+                secondsold = Math.floor(sectimeold);         
+        
+                msPerDay = 24 * 60 * 60 * 1000 ;         
+        
+                timeold = (today.getTime() - BirthDay.getTime());         
+        
+                e_daysold = timeold / msPerDay;         
+        
+                daysold = Math.floor(e_daysold);         
+        
+                e_hrsold = (e_daysold - daysold)*24;         
+        
+                hrsold = Math.floor(e_hrsold);         
+        
+                minsold = Math.floor((e_hrsold - hrsold)*60);           
+        
+                document.live.time1.value = daysold              
+        
+                document.live.time2.value = hrsold               
+        
+                document.live.time3.value = minsold              
+        
+                window.status = "Well at the moment you are " + secondsold + "............ seconds old.";         
+        
+                timerID = setTimeout("lifetimer()",1000)   
+        
+        }        
+        // -- done hiding from old browsers -->
+        
+        </script>
+
+<title>GNET</title>
+</head>
+
+<head>
+  <style>
+  .glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  </style></head>
+
+<style>body {
+    background:
+        repeating-linear-gradient(190deg, rgba(255, 0, 0, 0.5) 40px,
+          rgba(255, 153, 0, 0.5) 80px, rgba(255, 255, 0, 0.5) 120px,
+          rgba(0, 255, 0, 0.5) 160px, rgba(0, 0, 255, 0.5) 200px,
+          rgba(75, 0, 130, 0.5) 240px, rgba(238, 130, 238, 0.5) 280px,
+          rgba(255, 0, 0, 0.5) 300px),
+        repeating-linear-gradient(-190deg, rgba(255, 0, 0, 0.5) 30px,
+          rgba(255, 153, 0, 0.5) 60px, rgba(255, 255, 0, 0.5) 90px,
+          rgba(0, 255, 0, 0.5) 120px, rgba(0, 0, 255, 0.5) 150px,
+          rgba(75, 0, 130, 0.5) 180px, rgba(238, 130, 238, 0.5) 210px,
+          rgba(255, 0, 0, 0.5) 230px),
+        repeating-linear-gradient(23deg, red 50px, orange 100px,
+          yellow 150px, green 200px, blue 250px,
+          indigo 300px, violet 350px, red 370px);
+  }</style>
+
+
+<style> div.a {
+  position: absolute;
+  right: 50px;
+  width: 100px;
+  height: 120px;
+  border: 3px solid blue;
+} </style>
+
+
+  
+<h1>Welcome To GNET</h1>
+<h4 style="color:rgb(0, 70, 27)">Where all your dreams come true...</h4>
+<h5>Version 1.5</h5>
+
+
+
+
+
+    <FORM name="live">
+    
+        Please enter your age::<INPUT TYPE="text" NAME="age" VALUE="" SIZE=20> 
+        Example: (January 1,2003) <BR><BR><BR>
+        <INPUT TYPE="button" NAME="start" VALUE="Start Timer" ONCLICK="lifetimer(this.form)">
+        
+        <INPUT TYPE="reset" NAME="resetb" VALUE="Reset Age">
+        
+        <BR><BR>
+        
+        <TABLE border=0>
+        <TR><TD>You are days old:</TD>
+        
+        <TD>
+        
+        <INPUT TYPE="text" NAME="time1" VALUE="" size=8>
+        
+        </TD>
+        
+        </TR>
+        
+        <TR><TD>Plus hours old:</TD>
+        
+        <TD>
+        
+        <INPUT TYPE="text" NAME="time2" VALUE="" size=8>
+        
+        </TD>
+        
+        </TR>
+        
+        <TR><TD>Plus minutes old:</TD>
+        
+        <TD><INPUT TYPE="text" NAME="time3" VALUE="" size=8></TD>
+        
+        </TR>
+        </TABLE>
+        </FORM> 
+    
+    
+
+
+<h2>Basic Games</h2>
+
+<ul>
+  <li>Game1 Snake</li>
+  <form method="get" action="file:Content/SnakeJS.html"><button type="submit">Snake!</button></form>
+  <li>Game2 Breakout</li>
+  <form method="get" action="file:Content/breakoutpth.html"><button type="submit">Breakout!</button></form>
+  <li>Game3 Pong</li>
+  <form method="get" action="file:Content/pongpth.html"><button type="submit">Pong!</button></form>
+  <li>Game4 Guess the Number</li>
+  <form method="get" action="file:Content/numpth.html"><button type="submit">Numbers!</button></form>
+  </ul>
+
+  </style>
+  </head>
+   
+ 
+
+  <a id="prevLink" href='https://www.mathxlforschool.com/login_school.htm?returnurl=%2fStudent%2fDashboard.aspx'></a> 
+<a id="nextLink" href='https://www.mathxlforschool.com/login_school.htm?returnurl=%2fStudent%2fDashboard.aspx'></a>
+
+<script>document.addEventListener("keyup",function(e){
+  var key = e.which||e.keyCode;
+  switch(key){
+     //left arrow
+     case 37:
+        document.getElementById("prevLink").click();
+     break;
+     //right arrow
+     case 39:
+        document.getElementById("nextLink").click();
+     break;
+  }
+});</script>
+
+
+<a style="text-decoration:none" rel="" href="Content/Emulators.html" ><h2 class="glow">Emulators</h2>     </a>
+<p>.</p>
+<a style="text-decoration:none" rel="" href="Content/Popular Links.html" ><h2 class="glow">Popular Links</h2>     </a>
+<p>.</p>
+<a style="text-decoration:none" rel="" href="Content/HoM.html" ><h2 class="glow">Hall of Memes</h2>     </a>
+
+
+
+
+
+
+</body>
+</html>
