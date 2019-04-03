@@ -51,10 +51,9 @@ ________________________________________________________________________________
 I will add a lot more in future releases.  This is just my beta so I am just adding one piece of content per category. 
 
 
-GNET is a website which hosts numerous emulation devices, games, programming, and more!
+GNET is a website which hosts numerous emulation devices, games, programming, and more! 
 
 
-GNET is transferred by email or other file transfer method. GNET will NOT self-update. I will release new versions in the future. GNET will not be in any online domain.  
 
 
  
