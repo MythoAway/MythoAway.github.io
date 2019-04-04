@@ -4,11 +4,16 @@ GNET...
 
 To begin go to https://mythoaway.github.io/
 
-
-
-
-
-
+_________________________________________________________________________________________________
+Version 1.6 (Beta)
+-Website is now on an online domain.
+-Added twix game.
+-Added Guess the Number.
+-Changed the background of some pages.
+-On the home page you can use the left and right arrow keys to quickly switch to pearson.
+-Fixed bugs
+-HoM is currently empty but will be added to shortly. 
+-When this is verion 2.0 I will switch from the beta version numbers and use commits instead.
 _________________________________________________________________________________________________
 Upcoming Releases 1.5-2.0
 -Add popular link to its own page.
@@ -21,7 +26,6 @@ ________________________________________________________________________________
 Version 1.5 (Beta)
 -Emulators now have their own page.
 -You can choose which emulator to run or you can run them all at the same time.
--
 _________________________________________________________________________________________________
 Version 1.4 (Beta) 
 -Added Pong
