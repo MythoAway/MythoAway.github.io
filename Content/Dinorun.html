@@ -1,12 +1,108 @@
 <html>
     <head>
      <title>Dino-Run</title>
+     <p style="text-align:right"></p>
+     <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 2px solid #44333394;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #dddddd00;
+      }
+      </style>
+     <style>
+      #myDIV {
+        width: 100%;
+        padding: 50px 0;
+        text-align: right;
+        background-color: rgba(173, 216, 230, 0);
+        margin-top: 20px;
+      }
+      </style>
     </head>
   <body>
     <h2>DinoRun</h2>
-    <p>This is a siple but fun game. Eat Dinosaurs to gain exp. Then upgrade your Dino!
+    <p>This is a simple but fun game. Eat Dinosaurs to gain exp. Then upgrade your Dino!
     </p>
+    <p>Hit the shield icon in the search bar and then click "Load unsafe scripts"</p>
     <iframe height="450" width="700" src="http://static.arcadespot.com/embed/dino-run/" border="0" frameborder="0" scrolling="no"></iframe>
+
+    
+    <button onclick="myFunction()">Toggle Cheatcodes </button>
+
+    <div id="myDIV">
+      
+<table>
+  <tr>
+    <th>Cheat Codes</th>
+    <th>Effects</th>
+    
+  </tr>
+  <tr>
+    <td>don8tosaur</td>
+    <td>Unclock Hats</td>
+    
+  </tr>
+  <tr>
+    <td>goodbyesun</td>
+    <td>Darkness</td>
+    
+  </tr>
+  <tr>
+    <td>astrosaur</td>
+    <td>Low Gravity</td>
+    
+  </tr>
+  <tr>
+    <td>leapinliz</td>
+    <td>Super Jump</td>
+    
+  </tr>
+  <tr>
+    <td>smokey</td>
+    <td>Meteors</td>
+    
+  </tr>
+  <tr>
+    <td>totinos</td>
+    <td>Robot Hat</td>
+    <tr>
+      <td>goof balls</td>
+      <td>Boulders become Baloons</td>
+      <tr>
+        <td>explore</td>
+        <td>No Doom</td>
+        <tr>
+          <td>calcium</td>
+          <td>Super Strength</td>
+          <tr>
+            <td>dino racer</td>
+            <td>Max Speed</td>
+                
+  </tr>
+</table>
+    </div>
+    
+    
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
 
 
     <style>body {
@@ -28,7 +124,12 @@
 
 
 
-
+<script>window.addEventListener("keydown", function(e) {
+  // space and arrow keys
+  if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+      e.preventDefault();
+  }
+}, false);</script>
 
   </body>
 </html>
