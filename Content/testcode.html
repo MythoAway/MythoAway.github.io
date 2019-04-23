@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+      body {
+        margin: 0 auto;
+        max-width: 1024px;
+      }
+      main {
+        padding: 20px;
+      }
+      
+      
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      form {
+        font-size: 0.8rem;
+      }
+      .personal-greeting {
+        font-weight: bold;
+      }
+    </style>
+    <script src="greetings.js" defer></script>
+  </head>
+  <body>
+    
+      <h1>Our website</h1>
+
+      <form>
+        <div class="remember">
+          <label for="entername">Enter your name:</label>
+          <input id="entername" type="text" required>
+          <input id="submitname" type="submit" value="Say hello">
+        </div>
+        <div class="forget">
+          <label for="forgetname">Want me to forget you?</label>
+          <input id="forgetname" type="reset" value="Forget">
+        </div>
+      </form>
+   
+
+    <main>
+
+      <p class="personal-greeting">Welcome</p>
+
+    </main>
+
+   
+  </body>
+</html>
