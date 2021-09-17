@@ -9,19 +9,18 @@
 
 
   <h1 style="color:rgb(251, 255, 0)">Play Snake!</h1> <p style="color:rgb(251, 255, 0)">This version starts your snake with 500 blocks instead of 5!</p>
-  
-  <canvas id="c" width="1000" height="1000" style="height: 500px; width: 500px;"></canvas>  
 
-  <script src="SnakeJSH.js"></script> 
+  <canvas id="c" width="1000" height="1000" style="height: 500px; width: 500px;"></canvas>
+
+  <script src="SnakeJSH.js"></script>
 
   <script>window.addEventListener("keydown", function(e) {
     // space and arrow keys
     if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
         e.preventDefault();
     }
-  }, false);</script>
-   
-  
+}, false);
+</script>
 
   </body>
 </html>

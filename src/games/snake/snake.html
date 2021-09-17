@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="test.css">
-    <title>GNET-SnakeJS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>SnakeJS</title>
 </head>
 
-<h1 style="color:rgb(251, 255, 0)">Play Snake!</h1>
-<p style="color:rgb(251, 255, 0)">Snake is a game where you eat fruit to grow as big as possible. Dont run into your
-    body or into the wall.</p>
+<canvas class="mt-2 ml-2" id="c" width="1000" height="1000" style="height: 500px; width: 500px;" scrolling="no"></canvas>
 
-<canvas id="c" width="1000" height="1000" style="height: 500px; width: 500px;" scrolling="no"></canvas>
+<a class="btn btn-success" href="/Content/SnakeJSM.html" onclick="window.location.href='https://mythoaway.github.io/Content/SnakeJSM.html'">Small Version</a>
+<a class="btn btn-success" href="/Content/SnakeJSH.html" onclick="window.location.href='https://mythoaway.github.io/Content/SnakeJSH.html'">h u g e Verion</a>
+<a class="btn btn-success" href="#" onclick="startGame(true)">Start Game</a>
+<a class="btn btn-success" href="#" onclick="startGame(false)">Start (cursed)</a>
 
-<script src="SnakeJavaCode.js"></script>
-<form> <input type="button" value="Small Snake"
-        onclick="window.location.href='https://mythoaway.github.io/Content/SnakeJSM.html'" /> </form>
-<form> <input type="button" value="Big Snake"
-        onclick="window.location.href='https://mythoaway.github.io/Content/SnakeJSH.html'" /> </form>
 
-        <button onclick="startGame()">Restart Game</button>
+<style>
+    body {
+    background: url(https://i.dailymail.co.uk/i/pix/2017/03/01/13/3DD64B2D00000578-4270932-Nokia_has_announced_a_new_version_of_the_cult_game_Snake_for_Fac-a-22_1488374824594.jpg) no-repeat;
+    background-size: 100%;
+    background-position: right
+  }
 
-<script>window.addEventListener("keydown", function (e) {
+</style>
+
+<!-- import snakejs-->
+<script src="snake.js"></script>
+<script>
+    window.addEventListener("keydown", function (e) {
         // space and arrow keys
         if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
             e.preventDefault();
         }
+        if (e.keyCode == 80) {
+            startGame(true); // press p to start
+        }
     }, false);
+    startGame();
 </script>
-
-
-
-
 </body>
 
 </html>
