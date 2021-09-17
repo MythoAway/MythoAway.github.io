@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <title>GNET-SnakeJS</title>
+</head>
+
+<h1 style="color:rgb(251, 255, 0)">Play Snake!</h1>
+<p style="color:rgb(251, 255, 0)">Snake is a game where you eat fruit to grow as big as possible. Dont run into your
+    body or into the wall.</p>
+
+<canvas id="c" width="1000" height="1000" style="height: 500px; width: 500px;" scrolling="no"></canvas>
+
+<script src="SnakeJavaCode.js"></script>
+<form> <input type="button" value="Small Snake"
+        onclick="window.location.href='https://mythoaway.github.io/Content/SnakeJSM.html'" /> </form>
+<form> <input type="button" value="Big Snake"
+        onclick="window.location.href='https://mythoaway.github.io/Content/SnakeJSH.html'" /> </form>
+
+        <button onclick="startGame()">Restart Game</button>
+
+<script>window.addEventListener("keydown", function (e) {
+        // space and arrow keys
+        if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+            e.preventDefault();
+        }
+    }, false);
+</script>
+
+
+
+
+</body>
+
+</html>
